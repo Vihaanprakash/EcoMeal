@@ -69,7 +69,7 @@ function Logo() {
         <Leaf size={20} />
       </div>
       <div>
-        <div className="brand-name">FoodSaver</div>
+        <div className="brand-name">EcoMeal</div>
         <div className="brand-tagline">Save food. Save money.</div>
       </div>
     </div>
@@ -99,9 +99,7 @@ function Navbar({ mode, setMode }) {
 }
 
 function FoodCard({ listing, onReserve }) {
-  // const percent = Math.round(
-  //   (1 - listing.discount_price / listing.original_price) * 100
-  // );
+ 
 
   const originalPrice = Number(listing.original_price || 0);
   const discountPercent = Number(listing.discount_percent || 0);
@@ -256,10 +254,6 @@ function CustomerView({ refreshKey, setRefreshKey }) {
     load();
   }, [search, category, refreshKey]);
 
-  // const saved = reservations.reduce(
-  //   (sum, r) => sum + Number(r.discount_price) * Number(r.quantity),
-  //   0
-  // );
 
   const saved = reservations.reduce((sum, r) => {
     const original = Number(r.original_price || 0);
@@ -422,16 +416,7 @@ function ListingForm({ editing, onClose, onSaved }) {
     pickup_end: new Date(Date.now() + 2 * 3600000).toISOString(),
   };
 
-  // const [form, setForm] = useState({
-  //   name: initial.name,
-  //   description: initial.description,
-  //   category: initial.category,
-  //   originalPrice: initial.original_price,
-  //   discountPrice: initial.discount_price,
-  //   quantity: initial.quantity,
-  //   pickupStart: initial.pickup_start?.slice(0, 16),
-  //   pickupEnd: initial.pickup_end?.slice(0, 16),
-  // });
+ 
 
   const [form, setForm] = useState({
     name: initial.name,
