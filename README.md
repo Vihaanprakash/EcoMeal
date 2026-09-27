@@ -1,10 +1,10 @@
-# SmartFoodSave🍱
+# EcoMeal🍱
 
-FoodSaver is a full-stack web application that helps restaurants, bakeries, and cafeterias reduce food waste by listing surplus food for customers to reserve at a discounted price.
+EcoMeal is a full-stack web application that helps restaurants, bakeries, and cafeterias reduce food waste by listing surplus food for customers to reserve at a discounted price.
 
 ## Real-world problem
 
-Businesses often have food remaining near the end of the day. Throwing it away wastes food and money. FoodSaver creates a simple marketplace where businesses can list surplus items and customers can reserve them for pickup.
+Businesses often have food remaining near the end of the day. Throwing it away wastes food and money. EcoMeal creates a simple marketplace where businesses can list surplus items and customers can reserve them for pickup.
 
 ## Features
 
@@ -26,7 +26,7 @@ Businesses often have food remaining near the end of the day. Throwing it away w
 
 ### Smart business logic
 
-FoodSaver uses a transparent rule-based waste-risk engine. It considers:
+EcoMeal uses a transparent rule-based waste-risk engine. It considers:
 
 - percentage of inventory remaining
 - time remaining in the pickup window
@@ -50,7 +50,7 @@ This is intentionally rule-based instead of ML because a new platform would not 
 ## Project structure
 
 ```text
-foodsaver/
+EcoMeal/
 ├── client/
 │   ├── src/
 │   │   ├── components/
